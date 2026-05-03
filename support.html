@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TripWalkers — Support</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root{--fg:#01261F;--muted:#475569;--accent:#0F5132;--bg:#FFFFFF;--surface:#F8FAFC;--border:#E5E7EB}
+  *{box-sizing:border-box}
+  body{font-family:-apple-system,system-ui,Segoe UI,Roboto,sans-serif;max-width:760px;margin:0 auto;padding:32px 20px 80px;color:var(--fg);background:var(--bg);line-height:1.65}
+  header{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+  header h1{font-size:1.6rem;margin:0;font-weight:600}
+  .lang-toggle{display:flex;gap:8px}
+  .lang-toggle button{padding:6px 12px;background:var(--surface);border:1px solid var(--border);border-radius:8px;cursor:pointer;font-size:0.9rem;color:var(--muted)}
+  .lang-toggle button.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+  h2{font-size:1.15rem;margin-top:36px;margin-bottom:12px;font-weight:600}
+  h3{font-size:1rem;margin-top:24px;margin-bottom:8px;font-weight:600}
+  p,li{font-size:0.97rem;color:var(--muted)}
+  .lang{display:none}
+  .lang.active{display:block}
+  a{color:var(--accent)}
+  .contact-card{background:var(--surface);padding:20px;border-radius:12px;margin:24px 0}
+  .contact-card a{font-weight:600;font-size:1.05rem}
+  details{padding:16px 0;border-bottom:1px solid var(--border)}
+  details summary{cursor:pointer;font-weight:600;color:var(--fg);padding:6px 0;list-style:none}
+  details summary::before{content:"›";display:inline-block;width:1.2rem;transition:transform 0.15s;color:var(--accent)}
+  details[open] summary::before{transform:rotate(90deg)}
+  details > p{margin-top:8px;padding-left:1.2rem}
+  footer{margin-top:64px;padding-top:24px;border-top:1px solid var(--border);font-size:0.85rem;color:var(--muted)}
+  footer a{margin-right:16px}
+</style>
+</head>
+<body>
+<header>
+  <h1>TripWalkers</h1>
+  <div class="lang-toggle">
+    <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+    <button id="btn-tr" onclick="setLang('tr')">TR</button>
+  </div>
+</header>
+
+<!-- ENGLISH -->
+<section id="en" class="lang active">
+  <h2>Support</h2>
+  <p>Need help with TripWalkers? You're in the right place. We typically respond within 24-48 hours on weekdays.</p>
+
+  <div class="contact-card">
+    <p style="margin:0 0 4px 0">Email us:</p>
+    <a href="mailto:arzu.ugur00@gmail.com?subject=TripWalkers%20Support">arzu.ugur00@gmail.com</a>
+  </div>
+
+  <h2>Frequently asked</h2>
+
+  <details>
+    <summary>How does the free trial work?</summary>
+    <p>New users get 5 Walkers Bolts on first launch — enough for one 1-day plan. After that, multi-day plans need a Bolt pack. Trial works once per device.</p>
+  </details>
+
+  <details>
+    <summary>How much does each plan cost in Bolts?</summary>
+    <p>Plan length determines Bolt cost: 1 day = 5 · 2-3 days = 10 · 4-6 days = 12 · 7-9 days = 14 · 10-12 days = 16 · 13-14 days = 18. Each revision (regenerate a day, swap a stop, deepen the niche, refresh insights) costs 3 Bolts. Maximum trip length is 14 days.</p>
+  </details>
+
+  <details>
+    <summary>Where is my Walkers Bolt balance stored?</summary>
+    <p>On Apple's servers, scoped to your Apple ID via Sign in with Apple. If you change phones, sign in with the same Apple ID and your balance follows you.</p>
+  </details>
+
+  <details>
+    <summary>Why does my plan show "Information missing — fix"?</summary>
+    <p>The AI couldn't verify a stop's exact location or address. Tap the badge to open the fix sheet — enter the correct name/address, the app will look it up on Apple Maps and update the coordinates.</p>
+  </details>
+
+  <details>
+    <summary>Can I refund a Bolt purchase?</summary>
+    <p>Bolt packs are consumable in-app purchases. Apple handles refund requests at <a href="https://support.apple.com/en-us/HT204084">reportaproblem.apple.com</a>. If a plan generation failed, the Bolts are automatically refunded — no action needed.</p>
+  </details>
+
+  <details>
+    <summary>How do I delete my account?</summary>
+    <p>Email us at <a href="mailto:arzu.ugur00@gmail.com?subject=Delete%20my%20account">arzu.ugur00@gmail.com</a> from the email tied to your Apple ID. We delete your server-side records within 30 days. Local trip data is removed when you uninstall the app.</p>
+  </details>
+
+  <details>
+    <summary>Why is my plan only 1 day when I asked for 7?</summary>
+    <p>Free trial is limited to 1-day plans. Tap the orange "Get Bolts" pill at the top of your trip overview to unlock multi-day plans.</p>
+  </details>
+
+  <details>
+    <summary>Notifications aren't working</summary>
+    <p>Make sure Notifications permission is granted: iOS Settings → Notifications → TripWalkers → toggle Allow Notifications. Inside the app, Profile → toggle Smart Reminders on.</p>
+  </details>
+
+  <details>
+    <summary>The app is in the wrong language</summary>
+    <p>Profile → Language → choose Auto / Türkçe / English. The app needs to relaunch after a language change.</p>
+  </details>
+
+  <details>
+    <summary>What data does the app collect?</summary>
+    <p>See our <a href="privacy.html">Privacy Policy</a> for the full breakdown. Short version: only what's needed to make plans work — Apple ID, your trip content, and Walkers Bolt balance. No tracking, no ads.</p>
+  </details>
+</section>
+
+<!-- TÜRKÇE -->
+<section id="tr" class="lang">
+  <h2>Destek</h2>
+  <p>TripWalkers ile ilgili yardıma mı ihtiyacın var? Doğru yerdesin. Hafta içi 24-48 saat içinde geri dönüyoruz.</p>
+
+  <div class="contact-card">
+    <p style="margin:0 0 4px 0">E-posta gönder:</p>
+    <a href="mailto:arzu.ugur00@gmail.com?subject=TripWalkers%20Destek">arzu.ugur00@gmail.com</a>
+  </div>
+
+  <h2>Sık sorulanlar</h2>
+
+  <details>
+    <summary>Ücretsiz deneme nasıl çalışıyor?</summary>
+    <p>Yeni kullanıcılara ilk açılışta 5 Walkers Bolt verilir — 1 günlük plan için yeterli. Sonrasında çok günlü plan için Bolt paketi gerekir. Deneme cihaz başına bir kez geçerlidir.</p>
+  </details>
+
+  <details>
+    <summary>Her plan kaç Bolt?</summary>
+    <p>Plan uzunluğu Bolt maliyetini belirler: 1 gün = 5 · 2-3 gün = 10 · 4-6 gün = 12 · 7-9 gün = 14 · 10-12 gün = 16 · 13-14 gün = 18. Her revize (gün yeniden oluştur, durak değiştir, niş derinleştir, içgörüleri yenile) 3 Bolt'tur. Maksimum gezi uzunluğu 14 gündür.</p>
+  </details>
+
+  <details>
+    <summary>Walkers Bolt bakiyem nerede saklanıyor?</summary>
+    <p>Apple'ın sunucularında, Apple ile Giriş üzerinden Apple ID'ne bağlı olarak. Telefon değiştirsen aynı Apple ID ile giriş yap, bakiyen seninle gelir.</p>
+  </details>
+
+  <details>
+    <summary>Planımda neden "Bilgi eksik · düzelt" yazıyor?</summary>
+    <p>AI, durağın kesin konumunu veya adresini doğrulayamadı. Rozete dokun, düzelt sheet'i açılır — doğru ad/adresi gir, uygulama Apple Haritalar'da arar ve koordinatları günceller.</p>
+  </details>
+
+  <details>
+    <summary>Bolt satın almamı iade edebilir miyim?</summary>
+    <p>Bolt paketleri tüketilebilir uygulama içi satın almalardır. İade taleplerini Apple <a href="https://support.apple.com/tr-tr/HT204084">reportaproblem.apple.com</a> üzerinden yönetir. Plan üretimi başarısız olursa Bolt'lar otomatik iade edilir — işlem yapman gerekmez.</p>
+  </details>
+
+  <details>
+    <summary>Hesabımı nasıl silerim?</summary>
+    <p>Apple ID'ne bağlı e-postadan <a href="mailto:arzu.ugur00@gmail.com?subject=Hesap%20Silme">arzu.ugur00@gmail.com</a> adresine yaz. Sunucu kayıtlarını 30 gün içinde sileriz. Lokal gezi verileri uygulamayı kaldırınca kalkar.</p>
+  </details>
+
+  <details>
+    <summary>7 gün istedim ama planım sadece 1 gün geldi</summary>
+    <p>Ücretsiz deneme 1-gün planlarla sınırlıdır. Gezi özet sayfasının üstündeki turuncu "Bolt Al" pill'ine dokun, çok günlü planları aç.</p>
+  </details>
+
+  <details>
+    <summary>Bildirimler çalışmıyor</summary>
+    <p>Bildirim izni verili mi kontrol et: iOS Ayarlar → Bildirimler → TripWalkers → "Bildirimlere İzin Ver"i aç. Uygulama içinde: Profil → "Akıllı Hatırlatmalar"ı aç.</p>
+  </details>
+
+  <details>
+    <summary>Uygulama yanlış dilde</summary>
+    <p>Profil → Dil → Otomatik / Türkçe / İngilizce seç. Dil değişikliğinden sonra uygulamanın yeniden başlatılması gerek.</p>
+  </details>
+
+  <details>
+    <summary>Uygulama hangi verileri topluyor?</summary>
+    <p>Tam dökümünü <a href="privacy.html">Gizlilik Politikası</a>'nda bulabilirsin. Kısaca: sadece planın çalışması için gerekli — Apple ID, gezi içeriği ve Walkers Bolt bakiyesi. Takip yok, reklam yok.</p>
+  </details>
+</section>
+
+<footer>
+  <a href="index.html">Home</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <span style="float:right">© 2026 Corvus Tech</span>
+</footer>
+
+<script>
+function setLang(l){
+  document.querySelectorAll('.lang').forEach(s=>s.classList.toggle('active',s.id===l));
+  document.getElementById('btn-en').classList.toggle('active',l==='en');
+  document.getElementById('btn-tr').classList.toggle('active',l==='tr');
+  try{localStorage.setItem('tw_lang',l);}catch(e){}
+}
+try{
+  var saved=localStorage.getItem('tw_lang');
+  if(saved==='tr')setLang('tr');
+  else if(navigator.language&&navigator.language.toLowerCase().startsWith('tr'))setLang('tr');
+}catch(e){}
+</script>
+</body>
+</html>
