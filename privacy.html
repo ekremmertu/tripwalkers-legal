@@ -40,7 +40,7 @@
 <!-- ENGLISH -->
 <section id="en" class="lang active">
   <h2>Privacy Policy</h2>
-  <p class="meta">Effective date: <strong>3 May 2026</strong> · Last updated: 3 May 2026</p>
+  <p class="meta">Effective date: <strong>3 May 2026</strong> · Last updated: 17 October 2026</p>
 
   <p>This Privacy Policy describes how TripWalkers ("we", "the app") collects, uses, and protects your information. TripWalkers is operated by Corvus Tech.</p>
 
@@ -56,17 +56,30 @@
       <tr><td>Health & Fitness (steps, distance, calories)</td><td>Activity tracker (read-only HealthKit)</td><td>No — kept on device</td></tr>
       <tr><td>Purchase history (StoreKit)</td><td>Walkers Bolt grants & restore purchases</td><td>Yes</td></tr>
       <tr><td>Crash data (Apple default)</td><td>App stability diagnostics</td><td>No</td></tr>
+      <tr><td>In-app usage events (e.g. plan started, plan ready, price screen viewed)</td><td>Product analytics on our server; ad measurement via Meta (see 2a)</td><td>Yes</td></tr>
+      <tr><td>Advertising identifier (IDFA) — only if you allow tracking</td><td>Measuring our Meta ads (see 2a)</td><td>Yes</td></tr>
     </tbody>
   </table>
 
   <h2>2. Data we DO NOT collect</h2>
   <ul>
-    <li>We do <strong>not</strong> track you across other apps or websites.</li>
-    <li>We do <strong>not</strong> use third-party advertising SDKs.</li>
-    <li>We do <strong>not</strong> sell or share your data with brokers.</li>
+    <li>We do <strong>not</strong> sell your data or share it with data brokers.</li>
+    <li>We do <strong>not</strong> send your trip contents, destinations, notes, name or email to advertising partners.</li>
     <li><strong>Location:</strong> only used in-session to display maps (MapKit). Never stored or transmitted.</li>
     <li><strong>Camera and microphone:</strong> not used.</li>
     <li><strong>Contacts and photos library:</strong> not accessed.</li>
+  </ul>
+
+  <h2>2a. Advertising measurement (Meta)</h2>
+  <p>We use the Meta (Facebook) SDK to measure whether our ads lead to installs and purchases.</p>
+  <ul>
+    <li><strong>Your choice first:</strong> on first launch iOS asks whether TripWalkers may track you (App Tracking Transparency). The Meta SDK does not start until you answer.</li>
+    <li><strong>What is sent to Meta:</strong> app opens, a few in-app steps (onboarding finished, plan started, plan ready, Reel added, price screen viewed, "Buy" tapped) and purchases (product and price).</li>
+    <li><strong>If you allow tracking:</strong> your advertising identifier (IDFA) is included, so Meta can link the install to the ad you saw.</li>
+    <li><strong>If you do not allow tracking:</strong> the advertising identifier is not collected; Meta reports these events only in aggregate (SKAdNetwork / Aggregated Event Measurement).</li>
+    <li><strong>Never sent to Meta:</strong> trip contents, destinations, notes, your name or email.</li>
+    <li><strong>Change your choice anytime:</strong> iOS Settings → Privacy &amp; Security → Tracking → TripWalkers.</li>
+    <li>Meta's privacy policy: <a href="https://www.facebook.com/privacy/policy/">facebook.com/privacy/policy</a></li>
   </ul>
 
   <h2>3. Where your data lives</h2>
@@ -93,6 +106,8 @@
     <li><strong>Apple:</strong> Sign in with Apple, StoreKit, MapKit, HealthKit, Apple Maps Server.</li>
     <li><strong>Supabase:</strong> our backend host (auth, database, edge functions).</li>
     <li><strong>Anthropic:</strong> AI model provider (Claude).</li>
+    <li><strong>Meta:</strong> advertising measurement SDK (see 2a).</li>
+    <li><strong>Apple Ads attribution (AdServices):</strong> tells us whether the install came from an Apple Search Ads ad; no advertising identifier is used.</li>
     <li><strong>Unsplash, Pexels:</strong> destination cover images (no user data sent).</li>
   </ul>
 
@@ -107,7 +122,7 @@
 <!-- TÜRKÇE -->
 <section id="tr" class="lang">
   <h2>Gizlilik Politikası</h2>
-  <p class="meta">Yürürlük tarihi: <strong>3 Mayıs 2026</strong> · Son güncelleme: 3 Mayıs 2026</p>
+  <p class="meta">Yürürlük tarihi: <strong>3 Mayıs 2026</strong> · Son güncelleme: 17 Ekim 2026</p>
 
   <p>Bu Gizlilik Politikası, TripWalkers ("biz", "uygulama") tarafından bilgilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklar. TripWalkers Corvus Tech tarafından işletilmektedir.</p>
 
@@ -123,17 +138,30 @@
       <tr><td>Sağlık & Fitness (adım, mesafe, kalori)</td><td>Aktivite takipçisi (HealthKit yalnızca okuma)</td><td>Hayır — cihazda kalır</td></tr>
       <tr><td>Satın alma geçmişi (StoreKit)</td><td>Walkers Bolt yüklemeleri ve satın alma geri yükleme</td><td>Evet</td></tr>
       <tr><td>Çökme verileri (Apple varsayılan)</td><td>Uygulama kararlılık tanılama</td><td>Hayır</td></tr>
+      <tr><td>Uygulama içi kullanım olayları (ör. plan başlatıldı, plan hazır, fiyat ekranı görüldü)</td><td>Sunucumuzda ürün analizi; Meta ile reklam ölçümü (bkz. 2a)</td><td>Evet</td></tr>
+      <tr><td>Reklam kimliği (IDFA) — yalnız takibe izin verirseniz</td><td>Meta reklamlarımızı ölçmek (bkz. 2a)</td><td>Evet</td></tr>
     </tbody>
   </table>
 
   <h2>2. TOPLAMADIĞIMIZ veriler</h2>
   <ul>
-    <li>Sizi diğer uygulamalar veya web siteleri arasında <strong>takip etmiyoruz</strong>.</li>
-    <li>Üçüncü taraf reklam SDK'ları <strong>kullanmıyoruz</strong>.</li>
-    <li>Verilerinizi veri brokerlarına <strong>satmıyoruz veya paylaşmıyoruz</strong>.</li>
+    <li>Verilerinizi <strong>satmıyoruz</strong> ve veri brokerlarıyla <strong>paylaşmıyoruz</strong>.</li>
+    <li>Gezi içeriğinizi, şehirlerinizi, notlarınızı, adınızı veya e-postanızı reklam ortaklarına <strong>göndermiyoruz</strong>.</li>
     <li><strong>Konum:</strong> sadece oturum içinde harita gösterimi için kullanılır (MapKit). Asla saklanmaz veya iletilmez.</li>
     <li><strong>Kamera ve mikrofon:</strong> kullanılmaz.</li>
     <li><strong>Rehber ve fotoğraf kütüphanesi:</strong> erişilmez.</li>
+  </ul>
+
+  <h2>2a. Reklam ölçümü (Meta)</h2>
+  <p>Reklamlarımızın kurulum ve satın almaya dönüşüp dönüşmediğini ölçmek için Meta (Facebook) SDK'sını kullanırız.</p>
+  <ul>
+    <li><strong>Önce sizin seçiminiz:</strong> ilk açılışta iOS, TripWalkers'ın sizi takip edip edemeyeceğini sorar (Uygulama Takip Şeffaflığı). Siz cevap verene kadar Meta SDK'sı başlamaz.</li>
+    <li><strong>Meta'ya gönderilenler:</strong> uygulamanın açılması, birkaç uygulama içi adım (tanıtım bitti, plan başlatıldı, plan hazır, Reel eklendi, fiyat ekranı görüldü, "Satın al"a dokunuldu) ve satın almalar (ürün ve fiyat).</li>
+    <li><strong>Takibe izin verirseniz:</strong> reklam kimliğiniz (IDFA) de eklenir; Meta kurulumu gördüğünüz reklamla eşleştirebilir.</li>
+    <li><strong>İzin vermezseniz:</strong> reklam kimliği toplanmaz; Meta bu olayları yalnız toplu olarak raporlar (SKAdNetwork / Aggregated Event Measurement).</li>
+    <li><strong>Meta'ya asla gönderilmeyenler:</strong> gezi içeriği, şehirler, notlar, adınız veya e-postanız.</li>
+    <li><strong>Seçiminizi istediğiniz zaman değiştirin:</strong> iOS Ayarlar → Gizlilik ve Güvenlik → Takip → TripWalkers.</li>
+    <li>Meta'nın gizlilik politikası: <a href="https://www.facebook.com/privacy/policy/">facebook.com/privacy/policy</a></li>
   </ul>
 
   <h2>3. Verileriniz nerede tutulur</h2>
@@ -160,6 +188,8 @@
     <li><strong>Apple:</strong> Apple ile Giriş, StoreKit, MapKit, HealthKit, Apple Maps Server.</li>
     <li><strong>Supabase:</strong> backend host'umuz (auth, veritabanı, edge functions).</li>
     <li><strong>Anthropic:</strong> AI model sağlayıcımız (Claude).</li>
+    <li><strong>Meta:</strong> reklam ölçüm SDK'sı (bkz. 2a).</li>
+    <li><strong>Apple Ads atıfı (AdServices):</strong> kurulumun bir Apple Search Ads reklamından gelip gelmediğini söyler; reklam kimliği kullanılmaz.</li>
     <li><strong>Unsplash, Pexels:</strong> destinasyon kapak görselleri (kullanıcı verisi gönderilmez).</li>
   </ul>
 
